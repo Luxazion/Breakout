@@ -524,6 +524,33 @@
         "name": "Hongoazul",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Breakout menu.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Breakout menu.jpg",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1927,6 +1954,16 @@
                     "=",
                     "ToString(GlobalVariable(Score))"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Bloques",
+                    "=",
+                    "30"
+                  ]
                 }
               ]
             }
@@ -2738,7 +2775,7 @@
                   "parameters": [
                     "player",
                     "=",
-                    "RandomInRange(10, 800)",
+                    "RandomInRange(10, 583)",
                     "=",
                     "928"
                   ]
@@ -2763,7 +2800,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Score",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3571,6 +3607,37 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 176,
+          "layer": "",
+          "name": "NewSprite2",
+          "persistentUuid": "5b24f410-2838-4ab6-94e1-8ae64113d1b5",
+          "width": 171,
+          "x": 313,
+          "y": 685,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "9fac91e0-036b-4c06-8342-0757f03b402c",
+          "width": 0,
+          "x": 298,
+          "y": 675,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3594,7 +3661,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "..\\Breakout menu.jpg",
+                      "image": "Breakout menu.jpg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3741,6 +3808,70 @@
               "topMargin": 0,
               "width": 348
             }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewSprite2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite14",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Use Arrows",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         }
       ],
