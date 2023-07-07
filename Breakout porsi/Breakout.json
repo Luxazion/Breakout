@@ -2462,6 +2462,16 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "player",
+                    "+",
+                    "10"
+                  ]
                 }
               ]
             },
@@ -2936,6 +2946,16 @@
                     "Score",
                     "-",
                     "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "player",
+                    "-",
+                    "10"
                   ]
                 }
               ]
