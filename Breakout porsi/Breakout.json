@@ -2426,26 +2426,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeWidth"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "+",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeHeight"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "+",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
@@ -2909,26 +2889,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "ChangeWidth"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "-",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeHeight"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "-",
-                    "5"
-                  ]
-                },
                 {
                   "type": {
                     "value": "Delete"
