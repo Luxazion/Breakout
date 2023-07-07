@@ -1896,7 +1896,7 @@
                   },
                   "parameters": [
                     "Pelota",
-                    "470+RandomInRange(-20,20)",
+                    "470+RandomInRange(-40,40)",
                     "250",
                     "1"
                   ]
@@ -2462,6 +2462,16 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "player",
+                    "+",
+                    "10"
+                  ]
                 }
               ]
             },
@@ -2937,6 +2947,16 @@
                     "-",
                     "3"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "player",
+                    "-",
+                    "10"
+                  ]
                 }
               ]
             },
@@ -3002,9 +3022,66 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Movimiento Player",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Up"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "player",
+                    "TopDownMovement"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Down"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "player",
+                    "TopDownMovement"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
