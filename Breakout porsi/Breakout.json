@@ -1962,7 +1962,7 @@
                   "parameters": [
                     "Bloques",
                     "=",
-                    "30"
+                    "0"
                   ]
                 }
               ]
@@ -2034,7 +2034,7 @@
                   },
                   "parameters": [
                     "Bloques",
-                    "-",
+                    "+",
                     "1"
                   ]
                 },
@@ -2105,7 +2105,7 @@
                   },
                   "parameters": [
                     "Bloques",
-                    "-",
+                    "+",
                     "1"
                   ]
                 },
@@ -2176,7 +2176,7 @@
                   },
                   "parameters": [
                     "Bloques",
-                    "-",
+                    "+",
                     "1"
                   ]
                 },
@@ -2339,7 +2339,7 @@
                   "parameters": [
                     "Bloques",
                     "=",
-                    "0"
+                    "30"
                   ]
                 }
               ],
@@ -2424,26 +2424,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "ChangeWidth"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "+",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeHeight"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "+",
-                    "5"
-                  ]
-                },
                 {
                   "type": {
                     "value": "Delete"
@@ -2909,26 +2889,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "ChangeWidth"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "-",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeHeight"
-                  },
-                  "parameters": [
-                    "Pelota",
-                    "-",
-                    "5"
-                  ]
-                },
                 {
                   "type": {
                     "value": "Delete"
