@@ -3625,17 +3625,6 @@
                     "Random(800)",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "AddForceVers"
-                  },
-                  "parameters": [
-                    "Enemigo1",
-                    "player",
-                    "200",
-                    "1"
-                  ]
                 }
               ]
             },
@@ -3673,6 +3662,35 @@
                   "parameters": [
                     "Enemigo1",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Enemigo1",
+                    "player",
+                    "1000",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Enemigo1",
+                    "player",
+                    "200",
+                    "0"
                   ]
                 }
               ]
