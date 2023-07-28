@@ -1272,7 +1272,7 @@
           "name": "player",
           "persistentUuid": "c945b4e4-c591-46cf-bf42-42fc0ca9435a",
           "width": 128,
-          "x": 320,
+          "x": 370,
           "y": 928,
           "zOrder": 7,
           "numberProperties": [],
@@ -1606,14 +1606,14 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 30,
+                        "y": 30
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
                         "x": 0,
-                        "y": 0
+                        "y": -7
                       },
                       "customCollisionMask": []
                     }
@@ -3602,7 +3602,7 @@
                     "",
                     "\"aparicionenemigo\"",
                     ">=",
-                    "RandomInRange(4,10)"
+                    "RandomInRange(2,7)"
                   ]
                 }
               ],
@@ -3914,7 +3914,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "0",
@@ -3955,7 +3955,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "90",
@@ -3996,7 +3996,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "180",
@@ -4037,7 +4037,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "270",
@@ -4087,7 +4087,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "45",
@@ -4137,7 +4137,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "225",
@@ -4187,7 +4187,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "145",
@@ -4237,7 +4237,7 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "player.YFromAngleAndDistance(0,0)",
+                "player.XFromAngleAndDistance(0,0)",
                 "player.YFromAngleAndDistance(0,0)",
                 "Bala",
                 "-45",
