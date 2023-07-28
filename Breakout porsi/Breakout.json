@@ -650,6 +650,15 @@
         "name": "NewSprite25",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite26",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2351,6 +2360,61 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Bala",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "AdvancedProjectile",
+              "type": "AdvancedProjectile::AdvancedProjectile",
+              "MaxLifetime": 0,
+              "MaxDistanceFromStartingPosition": 0,
+              "MaxSpeed": 0,
+              "MinSpeed": 0,
+              "Acceleration": 0,
+              "StartingSpeed": 0,
+              "DeleteWhenLifetimeExceeded": true,
+              "DeleteWhenDistanceExceeded": true
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite26",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2916,7 +2980,7 @@
                     "",
                     "\"aparicionhongo\"",
                     ">=",
-                    "RandomInRange(2, 8)"
+                    "RandomInRange(4, 10)"
                   ]
                 }
               ],
@@ -3149,7 +3213,7 @@
                     "",
                     "\"aparicionmoneda\"",
                     ">=",
-                    "RandomInRange(2, 8)"
+                    "RandomInRange(4, 10)"
                   ]
                 }
               ],
@@ -3200,7 +3264,7 @@
                     "",
                     "\"aparicionportal\"",
                     ">=",
-                    "RandomInRange(2, 8)"
+                    "RandomInRange(4, 10)"
                   ]
                 }
               ],
@@ -3381,7 +3445,7 @@
                     "",
                     "\"aparicionhongoazul\"",
                     ">=",
-                    "RandomInRange(2, 8)"
+                    "RandomInRange(4, 10)"
                   ]
                 }
               ],
@@ -3523,68 +3587,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Movimiento Player",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Up"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateLeftKey"
-                  },
-                  "parameters": [
-                    "player",
-                    "TopDownMovement"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Down"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateRightKey"
-                  },
-                  "parameters": [
-                    "player",
-                    "TopDownMovement"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "name": "Enemigo",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3600,7 +3602,7 @@
                     "",
                     "\"aparicionenemigo\"",
                     ">=",
-                    "RandomInRange(2,8)"
+                    "RandomInRange(4,10)"
                   ]
                 }
               ],
@@ -3872,6 +3874,188 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Disparo",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "player.YFromAngleAndDistance(0,0)",
+                "player.YFromAngleAndDistance(0,0)",
+                "Bala",
+                "0",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "Bala",
+                "=",
+                "1.5\n"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "s"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "player.YFromAngleAndDistance(0,0)",
+                "player.YFromAngleAndDistance(0,0)",
+                "Bala",
+                "90",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "Bala",
+                "=",
+                "1.5\n"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "player.YFromAngleAndDistance(0,0)",
+                "player.YFromAngleAndDistance(0,0)",
+                "Bala",
+                "180",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "Bala",
+                "=",
+                "1.5\n"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "w"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "player.YFromAngleAndDistance(0,0)",
+                "player.YFromAngleAndDistance(0,0)",
+                "Bala",
+                "270",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "Bala",
+                "=",
+                "1.5\n"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
