@@ -677,6 +677,15 @@
         "name": "NewSprite28",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite29",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4969,6 +4978,31 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnyKeyReleased"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Game\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -5201,31 +5235,31 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 176,
-          "layer": "",
-          "name": "NewSprite2",
-          "persistentUuid": "5b24f410-2838-4ab6-94e1-8ae64113d1b5",
-          "width": 171,
-          "x": 313,
-          "y": 685,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
           "name": "NewText",
           "persistentUuid": "9fac91e0-036b-4c06-8342-0757f03b402c",
           "width": 0,
-          "x": 298,
+          "x": 83,
           "y": 675,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 91,
+          "layer": "",
+          "name": "NewText2",
+          "persistentUuid": "425e3027-26b3-4f43-9f04-cb2d957b5a52",
+          "width": 290,
+          "x": 463,
+          "y": 676,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5422,7 +5456,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite14",
+                      "image": "NewSprite29",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5455,7 +5489,29 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Use Arrows",
+          "string": "Move: ARROWS",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Shoot: WASD",
           "font": "",
           "textAlignment": "left",
           "characterSize": 40,
@@ -5512,6 +5568,31 @@
                 "value": "Quit"
               },
               "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnyKeyReleased"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Game\"",
                 ""
               ]
             }
