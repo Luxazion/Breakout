@@ -820,6 +820,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "NewSprite",
           "tags": "",
@@ -989,6 +990,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "NewSprite2",
           "tags": "",
@@ -1928,6 +1930,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bloque1",
           "tags": "",
@@ -1970,6 +1973,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bloque2",
           "tags": "",
@@ -2012,6 +2016,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bloque3",
           "tags": "",
@@ -2054,6 +2059,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "player",
           "tags": "",
@@ -2065,7 +2071,7 @@
             {
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
-              "FireCooldown": 0.1,
+              "FireCooldown": 0.5,
               "HasJustFired": false,
               "FiringArc": 45,
               "BulletQuantity": 1,
@@ -2093,9 +2099,9 @@
               "BulletSpeedVariance": 0
             },
             {
-              "allowDiagonals": true,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "allowDiagonals": true,
               "acceleration": 800,
               "deceleration": 100000,
               "angleOffset": 0,
@@ -2142,6 +2148,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Borde",
           "tags": "",
@@ -2184,6 +2191,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bordegameover",
           "tags": "",
@@ -2226,6 +2234,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Pelota",
           "tags": "",
@@ -2313,6 +2322,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Hongo",
           "tags": "",
@@ -2406,6 +2416,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Portal",
           "tags": "",
@@ -2472,6 +2483,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Moneda",
           "tags": "",
@@ -2538,6 +2550,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Hongoazul",
           "tags": "",
@@ -2609,6 +2622,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "VidaPlayer1",
           "tags": "",
@@ -2651,6 +2665,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "VidaPlayer2",
           "tags": "",
@@ -2693,6 +2708,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "VidaPlayer3",
           "tags": "",
@@ -2735,6 +2751,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "VidaPlayer4",
           "tags": "",
@@ -2777,6 +2794,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "VidaPlayer5",
           "tags": "",
@@ -2819,6 +2837,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemigo1",
           "tags": "",
@@ -2880,6 +2899,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bala",
           "tags": "",
@@ -2935,6 +2955,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemigo2",
           "tags": "",
@@ -3004,6 +3025,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "ReceptorFantasma",
           "tags": "",
@@ -3170,6 +3192,16 @@
                     "Vida",
                     "=",
                     "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "=",
+                    "0"
                   ]
                 },
                 {
@@ -5207,10 +5239,41 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "puntajefinal",
+          "persistentUuid": "1011ecc8-cdb5-4156-a26b-e0fec5088f13",
+          "width": 0,
+          "x": 189,
+          "y": 624,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "numerofinal",
+          "persistentUuid": "3f4f9de5-85f1-4e60-8d22-6140791c426c",
+          "width": 0,
+          "x": 431,
+          "y": 624,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "GameOver",
           "tags": "",
@@ -5378,6 +5441,50 @@
               "width": 348
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "puntajefinal",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Final Score:",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "numerofinal",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -5478,6 +5585,31 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "numerofinal",
+                "=",
+                "ToString(GlobalVariable(Score))"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -5556,6 +5688,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Win",
           "tags": "",
