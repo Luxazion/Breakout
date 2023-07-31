@@ -740,6 +740,16 @@
         "name": "player6",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "hitHurt(3).wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hitHurt(3).wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2153,10 +2163,10 @@
               "BulletSpeedVariance": 0
             },
             {
-              "ignoreDefaultControls": false,
               "name": "TopDownMovement",
-              "rotateObject": false,
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "ignoreDefaultControls": false,
+              "rotateObject": false,
               "allowDiagonals": true,
               "acceleration": 800,
               "deceleration": 100000,
@@ -4408,6 +4418,18 @@
                     "Enemigo1",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "hitHurt(3).wav",
+                    "",
+                    "50",
+                    ""
+                  ]
                 }
               ]
             },
@@ -4512,6 +4534,18 @@
                   },
                   "parameters": [
                     "Enemigo2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "hitHurt(3).wav",
+                    "",
+                    "50",
                     ""
                   ]
                 }
